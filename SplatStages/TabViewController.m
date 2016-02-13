@@ -42,15 +42,13 @@
         
         // From the continent, look up the region & regionUserFacing keys
         // Note: Africa is mapped to Europe, since there's no appropriate Splatoon region
-        NSDictionary* continentsAndRegions = @{@"Africa"    : @{@"internal" : @"eu", @"userfacing" : NSLocalizedString(@"REGION_EUROPE", nil)},
-                                               @"America"   : @{@"internal" : @"na", @"userfacing" : NSLocalizedString(@"REGION_NORTH_AMERICA", nil)},
-                                               @"Asia"      : @{@"internal" : @"jp", @"userfacing" : NSLocalizedString(@"REGION_JAPAN", nil)},
-                                               @"Australia" : @{@"internal" : @"eu", @"userfacing" : NSLocalizedString(@"REGION_EUROPE", nil)},
-                                               @"Europe"    : @{@"internal" : @"eu", @"userfacing" : NSLocalizedString(@"REGION_EUROPE", nil)},};
-        
-        NSLog(@"localeIdentifier = %@",[[NSLocale currentLocale] localeIdentifier]);
-        NSLog(@"Detected continent = %@",continent);
-        NSLog(@"region = %@",continentsAndRegions[continent][@"internal"]);
+		// Note 2: Asia being mapped to Japan will break if Splatoon releases in Korea or China
+        NSDictionary* continentsAndRegions = @{ @"Africa"    : @{ @"internal" : @"eu", @"userfacing" : NSLocalizedString(@"REGION_EUROPE", nil) },
+                                               @"America"   : @{ @"internal" : @"na", @"userfacing" : NSLocalizedString(@"REGION_NORTH_AMERICA", nil) },
+                                               @"Asia"      : @{ @"internal" : @"jp", @"userfacing" : NSLocalizedString(@"REGION_JAPAN", nil) },
+                                               @"Australia" : @{ @"internal" : @"eu", @"userfacing" : NSLocalizedString(@"REGION_EUROPE", nil) },
+                                               @"Europe"    : @{ @"internal" : @"eu", @"userfacing" : NSLocalizedString(@"REGION_EUROPE", nil) }
+											   };
         
         // Save the region setting
         NSUserDefaults* userDefaults = [SplatUtilities getUserDefaults];
@@ -332,18 +330,6 @@
     [self setStages];
     [self scheduleStageDownloadTimer];
     self.rotationTimer = nil;
-}
-
-// Delegate Method ------------
-
-- (BOOL) tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
-    if (self.needsInitialSetup) {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SETTINGS_SELECT_REGION_FIRST_TITLE", nil) message:NSLocalizedString(@"SETTINGS_SELECT_REGION_FIRST_TEXT", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"CONFIRM", nil) otherButtonTitles:nil, nil];
-        [alert show];
-        return false;
-    }
-    
-    return true;
 }
 
 @end
