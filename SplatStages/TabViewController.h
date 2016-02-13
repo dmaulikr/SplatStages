@@ -15,15 +15,12 @@
 #define SPLATFEST_CONTROLLER 2
 #define SETTINGS_CONTROLLER 3
 
-@interface TabViewController : UITabBarController <UITabBarControllerDelegate>
+@interface TabViewController : UITabBarController
 
 // Stages
 @property (nonatomic) BOOL viewsReady;
 @property (strong, atomic) SSFRotationTimer* rotationTimer;
 @property (strong, atomic) NSTimer* stageRequestTimer;
-
-// Setup
-@property (nonatomic) BOOL needsInitialSetup;
 
 - (void) getStageData;
 - (void) getSplatfestData;

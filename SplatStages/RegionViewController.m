@@ -103,11 +103,8 @@
         [userDefaults setObject:chosenRegionUser forKey:@"regionUserFacing"];
         [userDefaults synchronize];
         
-        // Tell the TabViewController that it's okay to let the user out.
-        TabViewController* rootController = (TabViewController*) self.tabBarController;
-        rootController.needsInitialSetup = false;
-        
         // Force a refresh of all the data.
+		TabViewController* rootController = (TabViewController*) self.tabBarController;
         [rootController refreshAllData];
     }
     

@@ -23,9 +23,6 @@
 - (void) viewDidLoad {
     [super viewDidLoad];
     
-    // For some reason this isn't possible in Interface Builder.
-    [self setDelegate:self];
-    
     // Force all our views to load right now.
     [self.viewControllers makeObjectsPerformSelector:@selector(view)];
     
@@ -56,10 +53,8 @@
         [userDefaults setObject:continentsAndRegions[continent][@"internal"] forKey:@"region"];
         [userDefaults setObject:continentsAndRegions[continent][@"userfacing"] forKey:@"regionUserFacing"];
         [userDefaults synchronize];
-        
-        self.needsInitialSetup = false;
+		
         [self setSelectedIndex:REGULAR_CONTROLLER];
-        
     }
     
 }
