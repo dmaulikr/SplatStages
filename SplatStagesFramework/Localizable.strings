@@ -75,4 +75,4 @@
 // Errors (UI)
 "ERROR_TITLE" = "Error";
 "ERROR_INTERNAL_DESCRIPTION" = "Internal description: ";
-"ERROR_TRY_AGAIN" = "Tap on Refresh Data in Settings to try again.";
+"ERROR_TRY_AGAIN" = "Tap on Refresh Data in Settings to try again. If you're currently modifying some settings, please try what you were doing again.";

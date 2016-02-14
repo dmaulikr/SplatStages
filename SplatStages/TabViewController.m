@@ -288,7 +288,7 @@
 - (void) errorOccurred:(NSError*) error when:(NSString*) when {
     NSString* whenLocalized = [SplatUtilities localizeString:when];
     NSString* errorLocalized = [error localizedDescription];
-    NSString* alertText = [whenLocalized stringByAppendingFormat:@"\n\n%@%@\n\n%@", [SplatUtilities localizeString:@"ERROR_INTERNAL_DESCRIPTION"], errorLocalized, NSLocalizedString(@"ERROR_TRY_AGAIN", nil)];
+    NSString* alertText = [whenLocalized stringByAppendingFormat:@"\n\n%@%@\n\n%@", [SplatUtilities localizeString:@"ERROR_INTERNAL_DESCRIPTION"], errorLocalized, [SplatUtilities localizeString:@"ERROR_TRY_AGAIN"]];
     
     // Create a UIAlertView on the UI thread
     dispatch_async(dispatch_get_main_queue(), ^{
