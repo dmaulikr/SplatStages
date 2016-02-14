@@ -10,6 +10,9 @@
 		0417215A1BB8B8CD0027991D /* StagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041721591BB8B8CD0027991D /* StagesCell.m */; };
 		0417215D1BB8B98D0027991D /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417215C1BB8B98D0027991D /* HeaderCell.m */; };
 		041721601BB8B9CD0027991D /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417215F1BB8B9CD0027991D /* MessageCell.m */; };
+		041A414A1C7100C5002D72F7 /* Configuration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 041A41491C7100C5002D72F7 /* Configuration.xcconfig */; };
+		041A414B1C7100D9002D72F7 /* Configuration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 041A41491C7100C5002D72F7 /* Configuration.xcconfig */; };
+		041A414C1C7100D9002D72F7 /* Configuration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 041A41491C7100C5002D72F7 /* Configuration.xcconfig */; };
 		041C3E6B1C0928E3005DC390 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041C3E6A1C0928E3005DC390 /* Localizable.strings */; };
 		04391BAD1BD3F1C70014EC99 /* SubscriptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391BAC1BD3F1C70014EC99 /* SubscriptionsViewController.m */; };
 		04391BB31BD3F1FC0014EC99 /* WidgetConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391BB21BD3F1FC0014EC99 /* WidgetConfigViewController.m */; };
@@ -118,6 +121,7 @@
 		0417215C1BB8B98D0027991D /* HeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCell.m; sourceTree = "<group>"; };
 		0417215E1BB8B9CD0027991D /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		0417215F1BB8B9CD0027991D /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		041A41491C7100C5002D72F7 /* Configuration.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		041C3E6A1C0928E3005DC390 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		04391BAB1BD3F1C70014EC99 /* SubscriptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionsViewController.h; sourceTree = "<group>"; };
 		04391BAC1BD3F1C70014EC99 /* SubscriptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionsViewController.m; sourceTree = "<group>"; };
@@ -223,6 +227,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041A41481C7100AF002D72F7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				041A41491C7100C5002D72F7 /* Configuration.xcconfig */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		047A5EC31BB5E09F00DD510D /* SplatStagesFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +286,7 @@
 		04EE0CB61BA5D47D003BE6A9 = {
 			isa = PBXGroup;
 			children = (
+				041A41481C7100AF002D72F7 /* Config */,
 				04EE0CC11BA5D47D003BE6A9 /* SplatStages */,
 				047A5EC31BB5E09F00DD510D /* SplatStagesFramework */,
 				047B3FAF1BB79199005BF2D0 /* SplatStagesToday */,
@@ -529,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041C3E6B1C0928E3005DC390 /* Localizable.strings in Resources */,
+				041A414C1C7100D9002D72F7 /* Configuration.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047B3FB51BB79199005BF2D0 /* MainInterface.storyboard in Resources */,
+				041A414B1C7100D9002D72F7 /* Configuration.xcconfig in Resources */,
 				04FF0F441BBB7D3C005BC356 /* InfoPlist.strings in Resources */,
 				04C1DE2E1BBA21DC00D98CA3 /* Localizable.strings in Resources */,
 			);
@@ -546,6 +561,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041A414A1C7100C5002D72F7 /* Configuration.xcconfig in Resources */,
 				04EE0CEB1BA5DAD4003BE6A9 /* Localizable.strings in Resources */,
 				044042AB1BAB4274003C481E /* InfoPlist.strings in Resources */,
 				04EE0CD21BA5D47D003BE6A9 /* LaunchScreen.storyboard in Resources */,
@@ -904,6 +920,7 @@
 		};
 		04EE0CD41BA5D47D003BE6A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041A41491C7100C5002D72F7 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -948,6 +965,7 @@
 		};
 		04EE0CD51BA5D47D003BE6A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041A41491C7100C5002D72F7 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

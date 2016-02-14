@@ -1,0 +1,13 @@
+//
+//  Configuration.xcconfig
+//  SplatStages
+//
+//  Created by mac on 2016-02-14.
+//  Copyright © 2016 OatmealDome. All rights reserved.
+//
+
+// Thanks to Fabián Cañas!
+// http://www.fabiancanas.com/blog/2014/9/1/keeping-private-api-keys-private
+
+#include "Keys.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) ONESIGNAL_APPLICATION_KEY=@\"$(ONESIGNAL_APPLICATION_KEY)\"

@@ -17,7 +17,14 @@
 @implementation AppDelegate
 
 - (BOOL) application:(UIApplication*) application didFinishLaunchingWithOptions:(NSDictionary*) launchOptions {
-    return YES;
+#ifdef ONESIGNAL_APPLICATION_KEY
+	self.oneSignal = [[OneSignal alloc] initWithLaunchOptions:launchOptions appId:ONESIGNAL_APPLICATION_KEY handleNotification:nil];
+#else
+	#warning The OneSignal application key is missing. Notification features have been disabled.
+	self.oneSignal = nil;
+#endif
+	
+	return YES;
 }
 
 - (void) applicationWillResignActive:(UIApplication*) application {
@@ -66,6 +73,5 @@
 - (void) applicationWillTerminate:(UIApplication*) application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end
