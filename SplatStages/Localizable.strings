@@ -23,13 +23,18 @@
 "SETTINGS_REGION_SET_TEXT_OUTDATED" = "(Please note that stage and score data for Splatfests in your region will not appear immediately after they are revealed in game.)";
 "SETTINGS_SAVED_TITLE" = "Saved";
 "SETTINGS_SAVED_TEXT" = "Settings successfully saved.";
+"SETTINGS_NOTIFICATIONS_DISABLED_TITLE" = "Notifications disabled";
+"SETTINGS_NOTIFICATIONS_DISABLED_TEXT" = "Notifications have been disabled. Please check if Notifications are enabled in the Settings app under Notifications -> SplatStages.";
 "SETTINGS_ABOUT_TEXT" = "SplatStages was written by OatmealDome. \n\nThe application icon was created by JessicaFreaxx. The Project Paintball font was created by JapanYoshi/theFIZZYnator. The settings icon was provided by icons8.com. \n\nThis app contains MBProgressHUD, NSAttributedString+CCLFormat and Valet. Schedule data is provided by splatoon.ink, and Splatfest data is provided by myself. Source code for this app is available on GitHub and is licensed under the BSD 3-clause license. \n\nSplatoon and all its related assets are copyright of Nintendo. Nintendo does not have any involvement whatsoever in the SplatStages app.";
 
 // Errors (App Specific)
 "ERROR_SETTINGS_NOT_SAVED" = "Your settings have not been saved.";
+"ERROR_ONESIGNAL_KEY_MISSING_TITLE" = "Notifications disabled";
+"ERROR_ONESIGNAL_KEY_MISSING_TEXT" = "The OneSignal application key is missing. Notification features have been disabled.";
 
 // Misc
 "CONFIRM" = "OK";
 "CANCEL" = "Cancel";
 "LOADING" = "Loading";
 "LOGGING_IN" = "Logging in";
+"SAVING" = "Saving";

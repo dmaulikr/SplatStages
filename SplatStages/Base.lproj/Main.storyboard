@@ -1206,16 +1206,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subscriptionCell" id="nRW-eh-T4g" userLabel="Subscription Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subscriptionCell" id="nRW-eh-T4g" userLabel="Subscription Cell" customClass="SubscriptionCell">
                                 <rect key="frame" x="0.0" y="114" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nRW-eh-T4g" id="hgY-dL-lzG">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gamemode - Map - Rotation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9L-lC-ZGr">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oOQ-Gg-Nwh">
                                             <rect key="frame" x="13" y="11" width="579" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1224,8 +1224,16 @@
                                         </label>
                                     </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="oOQ-Gg-Nwh" firstAttribute="trailing" secondItem="hgY-dL-lzG" secondAttribute="trailingMargin" id="0lh-0p-Aft"/>
+                                        <constraint firstItem="oOQ-Gg-Nwh" firstAttribute="centerY" secondItem="hgY-dL-lzG" secondAttribute="centerY" id="SyX-9W-bb7"/>
+                                        <constraint firstItem="oOQ-Gg-Nwh" firstAttribute="leading" secondItem="hgY-dL-lzG" secondAttribute="leadingMargin" constant="5" id="iOS-36-by6"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="label" destination="oOQ-Gg-Nwh" id="M76-u1-tH8"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCell" id="Gx2-xl-7DU" userLabel="Add Cell">
                                 <rect key="frame" x="0.0" y="158" width="600" height="44"/>
@@ -1245,6 +1253,9 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="xXe-Ie-uCO" kind="show" id="HYX-0L-nIS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1252,12 +1263,9 @@
                             <outlet property="delegate" destination="Z0R-v2-6mG" id="PYp-x2-eAe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notification Subscriptions" id="NeT-Ie-dHb">
+                    <navigationItem key="navigationItem" title="Subscriptions" id="NeT-Ie-dHb">
                         <barButtonItem key="backBarButtonItem" title="Settings" id="x5G-iD-B6t"/>
                     </navigationItem>
-                    <connections>
-                        <segue destination="xXe-Ie-uCO" kind="show" identifier="addSubscriptionSegue" id="ADC-WZ-NE5"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ic8-cj-drg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

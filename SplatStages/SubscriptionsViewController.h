@@ -10,4 +10,6 @@
 
 @interface SubscriptionsViewController : UITableViewController
 
+@property (strong, atomic) NSMutableArray* subscriptions;
+
 @end
