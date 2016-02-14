@@ -942,6 +942,26 @@
             </objects>
             <point key="canvasLocation" x="-622" y="2069"/>
         </scene>
+        <!--Legal Information-->
+        <scene sceneID="qLp-1d-Z3X">
+            <objects>
+                <viewController id="hQC-gt-3OO" customClass="LegalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pDE-Kk-7Vq"/>
+                        <viewControllerLayoutGuide type="bottom" id="hA7-F6-vll"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K89-FJ-UO9" customClass="UITextView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Legal Information" id="N9c-HO-bKB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJn-kw-fVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1274" y="2069"/>
+        </scene>
         <!--Settings Root-->
         <scene sceneID="pIL-Tp-YdB">
             <objects>
@@ -1178,6 +1198,32 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WVa-uh-HfZ" userLabel="About Cell">
+                                        <rect key="frame" x="0.0" y="517" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WVa-uh-HfZ" id="H36-Xl-OPv">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-HU-9xG">
+                                                    <rect key="frame" x="13" y="11" width="133" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="2Yb-HU-9xG" firstAttribute="centerY" secondItem="H36-Xl-OPv" secondAttribute="centerY" id="fBi-be-LP9"/>
+                                                <constraint firstItem="2Yb-HU-9xG" firstAttribute="leading" secondItem="H36-Xl-OPv" secondAttribute="leadingMargin" constant="5" id="iNK-Ew-Vez"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="hQC-gt-3OO" kind="show" id="vTO-eN-Ciz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
