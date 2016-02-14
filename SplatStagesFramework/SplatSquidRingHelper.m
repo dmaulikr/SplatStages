@@ -50,7 +50,7 @@
         // Check if the user has an NNID set
         if ([valet stringForKey:@"username"] == nil || [valet stringForKey:@"password"] == nil) {
             NSDictionary* userInfo = @{
-                                       NSLocalizedDescriptionKey : [SplatUtilities localizeString:@"ERROR_CREDENTIALS_NOT_SET"]
+                                       NSLocalizedDescriptionKey : [SplatUtilities localizeString:@"ERROR_CREDENTIALS_NOT_SET_DESCRIPTION"]
                                        };
             NSError* error = [[NSError alloc] initWithDomain:@"me.oatmealdome.ios.SplatStages" code:3 userInfo:userInfo];
             errorHandler(error, [SplatUtilities localizeString:@"ERROR_SPLATNET_LOG_IN"]);
@@ -78,7 +78,7 @@
             
             if (range.location == NSNotFound) {
                 NSDictionary* userInfo = @{
-                                           NSLocalizedDescriptionKey : [SplatUtilities localizeString:@"ERROR_LOG_IN_FAILED"]
+                                           NSLocalizedDescriptionKey : [SplatUtilities localizeString:@"ERROR_LOG_IN_FAILED_DESCRIPTION"]
                                            };
                 NSError* error = [[NSError alloc] initWithDomain:@"me.oatmealdome.ios.SplatStages" code:2 userInfo:userInfo];
                 errorHandler(error, [SplatUtilities localizeString:@"ERROR_SPLATNET_LOG_IN"]);
