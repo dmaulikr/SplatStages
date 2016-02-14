@@ -37,6 +37,7 @@
 		048500E21C1DE90F004BD6DB /* SSFRotationTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 048500E01C1DE90F004BD6DB /* SSFRotationTimer.m */; };
 		048500E51C1E4A29004BD6DB /* SSFSplatfestTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 048500E31C1E4A29004BD6DB /* SSFSplatfestTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		048500E61C1E4A29004BD6DB /* SSFSplatfestTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 048500E41C1E4A29004BD6DB /* SSFSplatfestTimer.m */; };
+		0493C9CE1C7007C300C92F0A /* SplatNetLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493C9CD1C7007C300C92F0A /* SplatNetLoginViewController.m */; };
 		04B27EE31C012DC4006720EF /* SplatSquidRingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B27EE21C012DC4006720EF /* SplatSquidRingHelper.m */; };
 		04B27EE51C012E41006720EF /* SplatSquidRingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B27EE41C012E41006720EF /* SplatSquidRingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04C1DE291BBA007600D98CA3 /* SplatStagesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A5EC21BB5E09F00DD510D /* SplatStagesFramework.framework */; };
@@ -147,6 +148,8 @@
 		048500E01C1DE90F004BD6DB /* SSFRotationTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFRotationTimer.m; sourceTree = "<group>"; };
 		048500E31C1E4A29004BD6DB /* SSFSplatfestTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFSplatfestTimer.h; sourceTree = "<group>"; };
 		048500E41C1E4A29004BD6DB /* SSFSplatfestTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFSplatfestTimer.m; sourceTree = "<group>"; };
+		0493C9CC1C7007C300C92F0A /* SplatNetLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplatNetLoginViewController.h; sourceTree = "<group>"; };
+		0493C9CD1C7007C300C92F0A /* SplatNetLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplatNetLoginViewController.m; sourceTree = "<group>"; };
 		04B27EE21C012DC4006720EF /* SplatSquidRingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplatSquidRingHelper.m; sourceTree = "<group>"; };
 		04B27EE41C012E41006720EF /* SplatSquidRingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplatSquidRingHelper.h; sourceTree = "<group>"; };
 		04C1DE2C1BBA014000D98CA3 /* SplatStages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SplatStages.entitlements; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				04391BB21BD3F1FC0014EC99 /* WidgetConfigViewController.m */,
 				04391BAB1BD3F1C70014EC99 /* SubscriptionsViewController.h */,
 				04391BAC1BD3F1C70014EC99 /* SubscriptionsViewController.m */,
+				0493C9CC1C7007C300C92F0A /* SplatNetLoginViewController.h */,
+				0493C9CD1C7007C300C92F0A /* SplatNetLoginViewController.m */,
 				04EE0CCB1BA5D47D003BE6A9 /* Main.storyboard */,
 				04EE0CCE1BA5D47D003BE6A9 /* Assets.xcassets */,
 				04EE0CD01BA5D47D003BE6A9 /* LaunchScreen.storyboard */,
@@ -740,6 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C349AF1C17A6980085A8CF /* StageViewController.m in Sources */,
+				0493C9CE1C7007C300C92F0A /* SplatNetLoginViewController.m in Sources */,
 				04EE0CC71BA5D47D003BE6A9 /* AppDelegate.m in Sources */,
 				04EE0CE51BA5D4D6003BE6A9 /* SettingsViewController.m in Sources */,
 				04EE0CC41BA5D47D003BE6A9 /* main.m in Sources */,

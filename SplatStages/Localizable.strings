@@ -25,7 +25,11 @@
 "SETTINGS_SAVED_TEXT" = "Settings successfully saved.";
 "SETTINGS_ABOUT_TEXT" = "SplatStages was written by OatmealDome. \n\nThe application icon was created by JessicaFreaxx. The Project Paintball font was created by JapanYoshi/theFIZZYnator. The settings icon was provided by icons8.com. \n\nThis app contains MBProgressHUD, NSAttributedString+CCLFormat and Valet. Schedule data is provided by splatoon.ink, and Splatfest data is provided by myself. Source code for this app is available on GitHub and is licensed under the BSD 3-clause license. \n\nSplatoon and all its related assets are copyright of Nintendo. Nintendo does not have any involvement whatsoever in the SplatStages app.";
 
+// Errors (App Specific)
+"ERROR_SETTINGS_NOT_SAVED" = "Your settings have not been saved.";
+
 // Misc
 "CONFIRM" = "OK";
 "CANCEL" = "Cancel";
 "LOADING" = "Loading";
+"LOGGING_IN" = "Logging in";
