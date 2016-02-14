@@ -176,6 +176,23 @@
     }];
 }
 
++ (void) logout:(void (^)()) completionHandler errorHandler:(void (^)(NSError* error, NSString* when)) errorHandler {
+	NSURLSession* session = [SplatDataFetcher dataSession];
+	NSURL* url = [NSURL URLWithString:@"https://splatoon.nintendo.net/sign_out"];
+	
+	[[session dataTaskWithURL:url completionHandler:^(NSData* data, NSURLResponse* response, NSError* taskError) {
+		// Check for an error first
+		if (taskError) {
+			errorHandler(taskError, @"ERROR_SPLATNET_LOG_OUT");
+			return;
+		}
+		
+		// No data is returned for me after this request finishes, so let's just assume
+		// that the logout was OK if there was no error raised by NSURLSession.
+		completionHandler();
+	}] resume];
+}
+
 + (void) checkIfLoggedIn:(void (^)(BOOL)) completionHandler errorHandler:(void (^)(NSError* error, NSString* when)) errorHandler {
     [SplatDataFetcher downloadAndParseJson:@"https://splatoon.nintendo.net/friend_list/index.json" completionHandler:^(id json, NSError* error) {
         if (error) {

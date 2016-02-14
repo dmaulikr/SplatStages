@@ -14,6 +14,8 @@
 
 + (void) getSchedule:(void (^)(NSMutableArray* schedule)) completionHandler errorHandler:(void (^)(NSError* error, NSString* when)) errorHandler;
 
++ (void) logout:(void (^)()) completionHandler errorHandler:(void (^)(NSError* error, NSString* when)) errorHandler;
+
 + (void) checkIfLoggedIn:(void (^)(BOOL)) completionHandler errorHandler:(void (^)(NSError* error, NSString* when)) errorHandler;
 
 + (BOOL) splatNetCredentialsSet;

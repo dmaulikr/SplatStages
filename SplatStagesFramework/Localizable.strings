@@ -60,6 +60,7 @@
 "ERROR_PARSING_JSON" = "An error occurred while parsing JSON data.";
 "ERROR_CLEARING_IMAGE_CACHE" = "An error occurred while trying to clear the Splatfest image cache.";
 "ERROR_SPLATNET_LOG_IN" = "An error occurred while trying to log into SplatNet.";
+"ERROR_SPLATNET_LOG_OUT" = "An error occurred while trying to log out of SplatNet.";
 "ERROR_LOADING_NOTIFICATION_SUBSCRIPTIONS" = "An error occurred while trying to load your notification subscriptions.";
 "ERROR_SAVING_SUBSCRIPTION_UPDATE" = "An error occurred while saving your updated subscription information.";
 "ERROR_LOADING_SPLATNET_SCHEDULES" = "An error occurred while trying to load the stage schedule from SplatNet.";

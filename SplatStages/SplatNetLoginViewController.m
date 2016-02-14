@@ -64,23 +64,41 @@
 		[valet setString:self.usernameField.text forKey:@"username"];
 		[valet setString:self.passwordField.text forKey:@"password"];
 		
-		// Attempt to log in!
-		[SplatSquidRingHelper loginToSplatNet:^{
-			// Show a settings saved alert
-			dispatch_async(dispatch_get_main_queue(), ^{
-				UIAlertView* finishAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SETTINGS_SAVED_TITLE", nil) message:NSLocalizedString(@"SETTINGS_SAVED_TEXT", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"CONFIRM", nil) otherButtonTitles:nil, nil];
-				[finishAlert show];
-			
-				[self resetUI];
-			});
-		} errorHandler:^(NSError* error, NSString* when) {
+		void (^errorOccurred)(NSError* error, NSString* when) = ^void(NSError* error, NSString* when) {
 			dispatch_async(dispatch_get_main_queue(), ^{
 				TabViewController* rootController = (TabViewController*) [self tabBarController];
 				[rootController errorOccurred:error when:when];
-			
+				
 				[self resetUI];
 			});
-
+		};
+		
+		void (^login)() = ^void() {
+			[SplatSquidRingHelper loginToSplatNet:^{
+				// Show a settings saved alert
+				dispatch_async(dispatch_get_main_queue(), ^{
+					UIAlertView* finishAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SETTINGS_SAVED_TITLE", nil) message:NSLocalizedString(@"SETTINGS_SAVED_TEXT", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"CONFIRM", nil) otherButtonTitles:nil, nil];
+					[finishAlert show];
+					
+					[self resetUI];
+				});
+			} errorHandler:^(NSError* error, NSString* when) {
+				errorOccurred(error, when);
+			}];
+		};
+		
+		[SplatSquidRingHelper checkIfLoggedIn:^(BOOL loggedIn) {
+			if (loggedIn) {
+				[SplatSquidRingHelper logout:^{
+					login();
+				} errorHandler:^(NSError* error, NSString* when) {
+					errorOccurred(error, when);
+				}];
+			} else {
+				login();
+			}
+		} errorHandler:^(NSError* error, NSString* when) {
+			errorOccurred(error, when);
 		}];
 	}
 	
