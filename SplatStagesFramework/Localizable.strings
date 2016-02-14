@@ -62,6 +62,9 @@
 "ERROR_SPLATNET_LOG_IN" = "An error occurred while trying to log into SplatNet.";
 "ERROR_LOADING_NOTIFICATION_SUBSCRIPTIONS" = "An error occurred while trying to load your notification subscriptions.";
 "ERROR_SAVING_SUBSCRIPTION_UPDATE" = "An error occurred while saving your updated subscription information.";
+"ERROR_LOADING_SPLATNET_SCHEDULES" = "An error occurred while trying to load the stage schedule from SplatNet.";
+"ERROR_LOADING_FRIENDS_LIST" = "An error occurred while trying to load your friends list.";
+"ERROR_CHECKING_IF_LOGGED_IN" = "An error occurred while trying to check if you're logged into SplatNet.";
 
 // Errors (Descriptions)
 "ERROR_KEYCHAIN_ACCESS_DESCRIPTION" = "Valet could not access the system keychain.";

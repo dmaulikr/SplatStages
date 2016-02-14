@@ -100,17 +100,17 @@
             // We need the stage names in English, so signal to the server that we want the locale to be "en"
             [SplatDataFetcher downloadAndParseJson:@"https://splatoon.nintendo.net/schedule/index.json?locale=en" completionHandler:^(NSDictionary* json, NSError* error) {
                 if (error) {
-                    errorHandler(error, @""); // TODO
+                    errorHandler(error, @"ERROR_LOADING_SPLATNET_SCHEDULES");
                     return;
                 }
                 
                 // Check if there is an error object in the dictionary
                 if ([json objectForKey:@"error"] != nil) {
                     NSDictionary* userInfo = @{
-                                               NSLocalizedDescriptionKey : [SplatUtilities localizeString:@""] // TODO
+											   NSLocalizedDescriptionKey : [json objectForKey:@"error"]
                                                };
                     NSError* error = [[NSError alloc] initWithDomain:@"me.oatmealdome.ios.SplatStages" code:4 userInfo:userInfo];
-                    errorHandler(error, [SplatUtilities localizeString:@""]); // TODO
+                    errorHandler(error, [SplatUtilities localizeString:@"ERROR_LOADING_SPLATNET_SCHEDULES"]);
                     return;
                 }
                 
@@ -168,7 +168,7 @@
 + (void) getOnlineFriends:(void (^)(NSDictionary* onlineFriends)) completionHandler errorHandler:(void (^)(NSError* error, NSString* when)) errorHandler {
     [SplatDataFetcher downloadAndParseJson:@"https://splatoon.nintendo.net/friend_list/index.json" completionHandler:^(id onlineFriends, NSError* error) {
         if (error) {
-            errorHandler(error, @""); // TODO
+            errorHandler(error, @"ERROR_LOADING_FRIENDS_LIST");
             return;
         }
         
@@ -179,7 +179,7 @@
 + (void) checkIfLoggedIn:(void (^)(BOOL)) completionHandler errorHandler:(void (^)(NSError* error, NSString* when)) errorHandler {
     [SplatDataFetcher downloadAndParseJson:@"https://splatoon.nintendo.net/friend_list/index.json" completionHandler:^(id json, NSError* error) {
         if (error) {
-            errorHandler(error, @""); // TODO
+            errorHandler(error, @"ERROR_CHECKING_IF_LOGGED_IN");
             return;
         }
         
