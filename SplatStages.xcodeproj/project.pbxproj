@@ -18,7 +18,7 @@
 		044F04351BC875820082F921 /* RegionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F04341BC875820082F921 /* RegionViewController.m */; };
 		046EBEEE1C1A434F0069D7F8 /* SSFRotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 046EBEEC1C1A434F0069D7F8 /* SSFRotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		046EBEEF1C1A434F0069D7F8 /* SSFRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 046EBEED1C1A434F0069D7F8 /* SSFRotation.m */; };
-		0470041A1C4ABED500A72AB0 /* SSFSplatfest.h in Headers */ = {isa = PBXBuildFile; fileRef = 047004181C4ABED500A72AB0 /* SSFSplatfest.h */; };
+		0470041A1C4ABED500A72AB0 /* SSFSplatfest.h in Headers */ = {isa = PBXBuildFile; fileRef = 047004181C4ABED500A72AB0 /* SSFSplatfest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0470041B1C4ABED500A72AB0 /* SSFSplatfest.m in Sources */ = {isa = PBXBuildFile; fileRef = 047004191C4ABED500A72AB0 /* SSFSplatfest.m */; };
 		047A5EC51BB5E09F00DD510D /* SplatStagesFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 047A5EC41BB5E09F00DD510D /* SplatStagesFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		047A5EC91BB5E09F00DD510D /* SplatStagesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A5EC21BB5E09F00DD510D /* SplatStagesFramework.framework */; };
@@ -381,11 +381,11 @@
 				047A5ED21BB5E0F300DD510D /* SplatDataFetcher.h in Headers */,
 				048500E11C1DE90F004BD6DB /* SSFRotationTimer.h in Headers */,
 				046EBEEE1C1A434F0069D7F8 /* SSFRotation.h in Headers */,
+				0470041A1C4ABED500A72AB0 /* SSFSplatfest.h in Headers */,
 				048500E51C1E4A29004BD6DB /* SSFSplatfestTimer.h in Headers */,
 				0493C9D11C70266400C92F0A /* SSFSubscription.h in Headers */,
 				04B27EE51C012E41006720EF /* SplatSquidRingHelper.h in Headers */,
 				047A5ED51BB6103D00DD510D /* SplatTimer.h in Headers */,
-				0470041A1C4ABED500A72AB0 /* SSFSplatfest.h in Headers */,
 				047B3FA61BB72875005BF2D0 /* SplatUtilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
