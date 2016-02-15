@@ -16,6 +16,7 @@
 		041A41531C712BB9002D72F7 /* LegalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A41521C712BB9002D72F7 /* LegalViewController.m */; };
 		041A41551C712DEE002D72F7 /* LICENSES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 041A41541C712DEE002D72F7 /* LICENSES.txt */; };
 		041A41561C712FE0002D72F7 /* LICENSES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 041A41541C712DEE002D72F7 /* LICENSES.txt */; };
+		041A41591C715975002D72F7 /* AddSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A41581C715975002D72F7 /* AddSubscriptionViewController.m */; };
 		041C3E6B1C0928E3005DC390 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041C3E6A1C0928E3005DC390 /* Localizable.strings */; };
 		04391BAD1BD3F1C70014EC99 /* SubscriptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391BAC1BD3F1C70014EC99 /* SubscriptionsViewController.m */; };
 		04391BB31BD3F1FC0014EC99 /* WidgetConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391BB21BD3F1FC0014EC99 /* WidgetConfigViewController.m */; };
@@ -129,6 +130,8 @@
 		041A41511C712BB9002D72F7 /* LegalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegalViewController.h; sourceTree = "<group>"; };
 		041A41521C712BB9002D72F7 /* LegalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegalViewController.m; sourceTree = "<group>"; };
 		041A41541C712DEE002D72F7 /* LICENSES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSES.txt; sourceTree = "<group>"; };
+		041A41571C715975002D72F7 /* AddSubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSubscriptionViewController.h; sourceTree = "<group>"; };
+		041A41581C715975002D72F7 /* AddSubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSubscriptionViewController.m; sourceTree = "<group>"; };
 		041C3E6A1C0928E3005DC390 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		04391BAB1BD3F1C70014EC99 /* SubscriptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionsViewController.h; sourceTree = "<group>"; };
 		04391BAC1BD3F1C70014EC99 /* SubscriptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionsViewController.m; sourceTree = "<group>"; };
@@ -336,6 +339,8 @@
 				04391BB21BD3F1FC0014EC99 /* WidgetConfigViewController.m */,
 				04391BAB1BD3F1C70014EC99 /* SubscriptionsViewController.h */,
 				04391BAC1BD3F1C70014EC99 /* SubscriptionsViewController.m */,
+				041A41571C715975002D72F7 /* AddSubscriptionViewController.h */,
+				041A41581C715975002D72F7 /* AddSubscriptionViewController.m */,
 				0493C9CC1C7007C300C92F0A /* SplatNetLoginViewController.h */,
 				0493C9CD1C7007C300C92F0A /* SplatNetLoginViewController.m */,
 				041A41511C712BB9002D72F7 /* LegalViewController.h */,
@@ -787,6 +792,7 @@
 				04C349AF1C17A6980085A8CF /* StageViewController.m in Sources */,
 				0493C9CE1C7007C300C92F0A /* SplatNetLoginViewController.m in Sources */,
 				04EE0CC71BA5D47D003BE6A9 /* AppDelegate.m in Sources */,
+				041A41591C715975002D72F7 /* AddSubscriptionViewController.m in Sources */,
 				04EE0CE51BA5D4D6003BE6A9 /* SettingsViewController.m in Sources */,
 				04EE0CC41BA5D47D003BE6A9 /* main.m in Sources */,
 				041A41531C712BB9002D72F7 /* LegalViewController.m in Sources */,
