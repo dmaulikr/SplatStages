@@ -24,6 +24,12 @@
 - (void) viewDidLoad {
     [super viewDidLoad];
 	
+	self.subscriptions = nil;
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	
 #ifdef ONESIGNAL_APPLICATION_KEY
 	// Check if notifications are enabled
 	if (![[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
