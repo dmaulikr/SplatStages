@@ -6,6 +6,7 @@ xcodeproj 'SplatStages.xcodeproj'
 target 'SplatStages' do
 	pod 'MBProgressHUD', '~> 0.9.1'
 	pod 'OneSignal'
+	pod 'ActionSheetPicker-3.0', '~> 2.0.5'
 end
 
 target 'SplatStagesFramework' do

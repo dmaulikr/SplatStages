@@ -7,42 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0046C1717D136F50194A90FA9AC29901 /* VALValet_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = E62D748FC0E0E2282A6B15D8456F6E08 /* VALValet_Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		120DFE7C7A0A4DF7DE0BDBCBEF528837 /* ValetDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E48548D329F439F6B888E3ADC62132 /* ValetDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C990D8D575614F02422202D9B5F3C80 /* VALSynchronizableValet.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C37F84F86F6B1AB50D3EE459F534C8 /* VALSynchronizableValet.m */; };
-		1FDF18A00A312036707D09CFFB48B5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBCA24073E628B188F2C104830A4B /* Foundation.framework */; };
-		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBCA24073E628B188F2C104830A4B /* Foundation.framework */; };
-		3582E9A38AC66127748330B59ECE0892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBCA24073E628B188F2C104830A4B /* Foundation.framework */; };
-		38BE0A7407C7AB7ADC2BD52D88B60261 /* NSAttributedString+CCLFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = CA231107475E2F95D2AC73383395D42E /* NSAttributedString+CCLFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44C9BDF46F5F9B4BB19F8C66D4CE9717 /* NSAttributedString+CCLFormat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D34923D8DF0683677A9AB28F567F5634 /* NSAttributedString+CCLFormat-dummy.m */; };
-		4C8039118314399CEE07152A87DEA6FA /* Pods-SplatStages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 135D8E16534DFA5AFE60BFDAF1836ECE /* Pods-SplatStages-dummy.m */; };
-		4FAEFE00F17BEF03CB5E8A0CA593F251 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8398B3D0EB66636F9DF19257E36C76C3 /* Security.framework */; };
-		5D4303360D8E0180C13B3A680C4866A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBCA24073E628B188F2C104830A4B /* Foundation.framework */; };
-		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F060ECBDB69EFEB1865DC463C89FE6 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404D69B17CE747E6C6FCCAF879AAD2DB /* CoreGraphics.framework */; };
-		7FA9264B75B4A2636D2DAAF817284CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBCA24073E628B188F2C104830A4B /* Foundation.framework */; };
-		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBFD43E8C7097233DD4F7FEDAA47860 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		87BEB0E9BC1DCDF9F809E10DE1DDD237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBCA24073E628B188F2C104830A4B /* Foundation.framework */; };
-		92A25678399A5DDCB356C846F13AF5B7 /* NSAttributedString+CCLFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E349DD11E458E8A3165D0CD6AD849A /* NSAttributedString+CCLFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0046C1717D136F50194A90FA9AC29901 /* VALValet_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC052AFCB5332BC7860E2411F662FD6 /* VALValet_Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FFB30535F6B4DD6A0E7DB8B367D3110 /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 105179663DF9787EEE5FDA6623D91693 /* SWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		120DFE7C7A0A4DF7DE0BDBCBEF528837 /* ValetDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 10244A55E1E5184538C910865268DCDB /* ValetDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C990D8D575614F02422202D9B5F3C80 /* VALSynchronizableValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF6A34DC21C8CF4518B86A621F0929 /* VALSynchronizableValet.m */; };
+		1FDF18A00A312036707D09CFFB48B5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		212229C92E1AE53C1A6484BE879AA78D /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = ED98B615D3287A8D6BA6478707C91940 /* ActionSheetLocalePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2389031267C7E4D6183CB3F33FFDFCED /* ActionSheetPicker-3.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD2C9290D8102AC16946D58AA6D4690 /* ActionSheetPicker-3.0-dummy.m */; };
+		2851FB5E08B2ED22B6A14C1B32BEF450 /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B278A0231344C75613017DA0344F2E1 /* DistancePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		344F8694420AB4C9208DE58BC5BC2AD4 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D63780A26844237F70E89ABA1921DBDB /* ActionSheetDistancePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3582E9A38AC66127748330B59ECE0892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		38BE0A7407C7AB7ADC2BD52D88B60261 /* NSAttributedString+CCLFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 843F045010B48E506F179B79ACDE6D43 /* NSAttributedString+CCLFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44C9BDF46F5F9B4BB19F8C66D4CE9717 /* NSAttributedString+CCLFormat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F682B250FCDB73B1A988DA93643490F /* NSAttributedString+CCLFormat-dummy.m */; };
+		45E9F68257ABFEAA2ADF1D45CAB62096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		4D79CC1FC9F4755285A78973185072F5 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 664C2EB45C4E0584E81738505A343FB2 /* SWActionSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4FAEFE00F17BEF03CB5E8A0CA593F251 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00004D6E9BE4CB4A62F38A3044584389 /* Security.framework */; };
+		5783D43A53FF3790FD7691D1AFB9FC56 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E28D0CA06C70C425ECF6AB2987DCA8 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5D4303360D8E0180C13B3A680C4866A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		5E30E814A1C1DDF0831C13EAA7B67D8D /* ActionSheetCustomPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE955FA7DADF1E3E52BAA899B7A8A0D /* ActionSheetCustomPickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C88200ECBE0EE2D01D24C7AE3C3A407 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63981AA3C78C0BE575F3C995E17BDE55 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1384040E4AB9AEE8D07158C94BA7C029 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		68A4E8C7CB6ABC2DA39DF0084C7CBF1F /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 748C19658148B8C7B0108C610FEE9F97 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6CD2ECE24EA979DE1B7102C2237BF5F2 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 33413C33DFA7740363BCF31EB1C8C807 /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC00491D5BFDA2FAA1C2CEEA9776B44 /* CoreGraphics.framework */; };
+		75E875601EF847C0AD04F3A80D765D90 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF8AFDA9DB461516B1A98DA8269F574 /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7FA9264B75B4A2636D2DAAF817284CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2091245C8B503BDC8A28B4F44940C3DC /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92A25678399A5DDCB356C846F13AF5B7 /* NSAttributedString+CCLFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF85770DEAF10A744582DCF0CA56D06 /* NSAttributedString+CCLFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9398BBFEB27A935FCC12C7CF389CE6CA /* Pods-SplatStagesToday-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD458998DB660E730847A5E583AC03F /* Pods-SplatStagesToday-dummy.m */; };
-		94104C5A010EC99626F6F9C0887D26A0 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB4E0B04DFE9CF4A544CD72EB89ADA4 /* Valet-dummy.m */; };
-		A2B9F83F9459256F1707D792F00E30E4 /* VALSecureEnclaveValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7232AD7186464347E97BC379D6007C7E /* VALSecureEnclaveValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A49D2F91B998AD937A57A17C3CAB85F6 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = F3ECB0E1BA1EA69DFF84796CF70BA2A5 /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C025C4A57EF91B4442C0E6A9192D3101 /* VALValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7E5A4642C75A02A661FA866024B757 /* VALValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1438ABE4E288E7E6A849E1F77AF4335 /* VALValet.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4CEC41FCF27A8AEB02E9E12C19005E /* VALValet.m */; };
+		93BE1B21D2EF4C203B2737AFD25CB194 /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2419BA4B4D34AB7422D39CA8E3B2E1EB /* ActionSheetCustomPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94104C5A010EC99626F6F9C0887D26A0 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C17FF377D76F07A3F7AB5C6797708A81 /* Valet-dummy.m */; };
+		A2B9F83F9459256F1707D792F00E30E4 /* VALSecureEnclaveValet.h in Headers */ = {isa = PBXBuildFile; fileRef = F40937A93463EB30A7EB2FB0699EE65A /* VALSecureEnclaveValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A49D2F91B998AD937A57A17C3CAB85F6 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC86C57D5611982AC32EBCCD71C453D /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F1041E6A92D9CCA19E135349298084 /* Pods-SplatStages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 135D8E16534DFA5AFE60BFDAF1836ECE /* Pods-SplatStages-dummy.m */; };
+		B8C1CB3C3B1955EADCD7B4134832DBC8 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C1BAC31E5E8B01B69D4BA47595058 /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C025C4A57EF91B4442C0E6A9192D3101 /* VALValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 239521D1CC3F04130869D40106816B47 /* VALValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1438ABE4E288E7E6A849E1F77AF4335 /* VALValet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEC0E37C31008B679898F26EC7F576 /* VALValet.m */; };
+		C3508A8CABFFFD4328831305D47BA0E7 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A843EE251F3496D8755BED35F5F4099 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C894D7FF063A3F5A240E263C56AD40E1 /* ActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 25AB47A310B9B46351ADAEF3F808D24A /* ActionSheetDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D69FAEACB1EA5CBF8064A19FDE24AEA6 /* ActionSheetMultipleStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B81C0965A63ED9A99EE0A83F54AC5E1F /* ActionSheetMultipleStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8BFE0C7FFBD363614EA17FA7B93ABE4 /* Pods-SplatStagesFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA8D76996FE4F86A137084426CE10D7 /* Pods-SplatStagesFramework-dummy.m */; };
-		EE45AF5D00386F726312C5AC1DA92997 /* VALSynchronizableValet.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A2D208B6B79B2F3192A6F1C400F1B5 /* VALSynchronizableValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB3AA83B54D4CD1526773C27E078635 /* MBProgressHUD-dummy.m */; };
-		FF58885D963C760403EE5CCC75D4F1FD /* VALSecureEnclaveValet.m in Sources */ = {isa = PBXBuildFile; fileRef = BB53FC1B45533D204A3B2E46D5491F1A /* VALSecureEnclaveValet.m */; };
+		DFF07CF909C72E2CBF4940B14F0ED362 /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FD736B920A569D847DDA15C51FFDC6 /* ActionSheetMultipleStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E72743EE2EDF2CF30023BA52CF5F87C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEC17A1B692433737CF77383394C81 /* UIKit.framework */; };
+		ECD909A0F04AF0626AAA010FF07D4CF3 /* ActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = E9EF2B8222D7D6C3FCC9104C2FD66364 /* ActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE45AF5D00386F726312C5AC1DA92997 /* VALSynchronizableValet.h in Headers */ = {isa = PBXBuildFile; fileRef = C496435C75C7D0E8216D449BCECB485B /* VALSynchronizableValet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F07AD946CCB083CFBB4B53B3FDD11A34 /* AbstractActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D0885501970A23131F805DD46D9F15 /* AbstractActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F85C650DF29E36A3FC4F0BB0E5655EF6 /* ActionSheetStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6511DE28D12A413C4612604274E8DE80 /* ActionSheetStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF419C6BDF401F326514D20255983AD /* MBProgressHUD-dummy.m */; };
+		FD2250CF8705F2EC1C486798E1AB90D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A082E8641075C266767E6137D7835BD2 /* Foundation.framework */; };
+		FF58885D963C760403EE5CCC75D4F1FD /* VALSecureEnclaveValet.m in Sources */ = {isa = PBXBuildFile; fileRef = AE066FF0937F8B8EBDBDD649CD52906C /* VALSecureEnclaveValet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1115A096F16E32F49CD309F2DFEC7A7A /* PBXContainerItemProxy */ = {
+		26C3A853B1D919196E54E4313E323D30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
-			remoteInfo = MBProgressHUD;
+			remoteGlobalIDString = 4C36B1F5D992ACDFD781AFC537E2D4B2;
+			remoteInfo = "ActionSheetPicker-3.0";
 		};
 		645C1DC515385180223B7AAC9C98B3D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +88,13 @@
 			remoteGlobalIDString = 0567FA252832207BC6A51CAE57368C06;
 			remoteInfo = "NSAttributedString+CCLFormat";
 		};
+		D6E771FCA1C16B8D25CD2C45419DFD0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
+		};
 		DF4B6F18BD12E0838666A0E4D1321E89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -75,60 +105,85 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02D7978F416E5373345F5D6ED18CC3F6 /* NSAttributedString+CCLFormat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CCLFormat-prefix.pch"; sourceTree = "<group>"; };
-		033374089F2ACFEAE3708F098C1DEE94 /* libPods-SplatStagesToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SplatStagesToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00004D6E9BE4CB4A62F38A3044584389 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		03FC4035954DF4DABC43B01A03CDA421 /* Pods-SplatStagesToday-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SplatStagesToday-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B89A5AA03CC6A892C2D4A80E66BE55B /* libPods-SplatStages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SplatStages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7E5E40FC29CFACE97D7850606BCF20 /* NSAttributedString+CCLFormat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CCLFormat-prefix.pch"; sourceTree = "<group>"; };
+		10244A55E1E5184538C910865268DCDB /* ValetDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValetDefines.h; path = Other/ValetDefines.h; sourceTree = "<group>"; };
+		105179663DF9787EEE5FDA6623D91693 /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
 		135D8E16534DFA5AFE60BFDAF1836ECE /* Pods-SplatStages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SplatStages-dummy.m"; sourceTree = "<group>"; };
-		16A2D208B6B79B2F3192A6F1C400F1B5 /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
+		1384040E4AB9AEE8D07158C94BA7C029 /* DistancePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
 		178F89BD72279D8A2E3BACC89CA2B460 /* Pods-SplatStages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatStages.debug.xcconfig"; sourceTree = "<group>"; };
-		1AF198215F82C549A0506AB4E3235585 /* libValet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libValet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE955FA7DADF1E3E52BAA899B7A8A0D /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
 		1EB4967E606D4CCEC4840A60E50F3929 /* Pods-SplatStagesFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatStagesFramework.debug.xcconfig"; sourceTree = "<group>"; };
-		207C3778AAC896004A0CDFCDAAD3CADC /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		272FBCA24073E628B188F2C104830A4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2091245C8B503BDC8A28B4F44940C3DC /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		225842FB72572577AB739A00F7EB9CEF /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		239521D1CC3F04130869D40106816B47 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
+		2419BA4B4D34AB7422D39CA8E3B2E1EB /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		25AB47A310B9B46351ADAEF3F808D24A /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
 		2AA9960A42C5ACBEDE444B28BDA6B9F2 /* Pods-SplatStagesFramework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SplatStagesFramework-acknowledgements.plist"; sourceTree = "<group>"; };
+		309ECE2E75FCE87DC7E1A173B2AC1579 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		33413C33DFA7740363BCF31EB1C8C807 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
 		3895CC4874A00A2738229F6DA6ADA7E4 /* Pods-SplatStagesFramework-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SplatStagesFramework-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3A7E5A4642C75A02A661FA866024B757 /* VALValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet.h; path = Valet/VALValet.h; sourceTree = "<group>"; };
-		404D69B17CE747E6C6FCCAF879AAD2DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		4F0779285F375636FE003F294A321424 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		54E349DD11E458E8A3165D0CD6AD849A /* NSAttributedString+CCLFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CCLFormat.m"; sourceTree = "<group>"; };
+		3C0624F3157D3BAFA831D3FB68B21A3D /* ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
+		3C65F5BF204B54CFC56DEBAC6792904C /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
+		41C612337F819F56E447135FDB17B3F4 /* libValet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libValet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B278A0231344C75613017DA0344F2E1 /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
 		599713CBDC89A939BC1E9141DC397FE7 /* Pods-SplatStages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatStages.release.xcconfig"; sourceTree = "<group>"; };
+		5A6C1BAC31E5E8B01B69D4BA47595058 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		5C88200ECBE0EE2D01D24C7AE3C3A407 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6511DE28D12A413C4612604274E8DE80 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		664C2EB45C4E0584E81738505A343FB2 /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
+		66AF6A34DC21C8CF4518B86A621F0929 /* VALSynchronizableValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSynchronizableValet.m; path = Valet/VALSynchronizableValet.m; sourceTree = "<group>"; };
+		6A843EE251F3496D8755BED35F5F4099 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		6ABBAF432FBDEF2E16B20BD01A62641F /* NSAttributedString+CCLFormat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSAttributedString+CCLFormat.xcconfig"; sourceTree = "<group>"; };
 		6EB54023FAA688C634E8E08C9A9FE7E3 /* Pods-SplatStages-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatStages-resources.sh"; sourceTree = "<group>"; };
-		7232AD7186464347E97BC379D6007C7E /* VALSecureEnclaveValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet.h; path = Valet/VALSecureEnclaveValet.h; sourceTree = "<group>"; };
-		8398B3D0EB66636F9DF19257E36C76C3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		6EC052AFCB5332BC7860E2411F662FD6 /* VALValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet_Protected.h; path = Valet/VALValet_Protected.h; sourceTree = "<group>"; };
+		748C19658148B8C7B0108C610FEE9F97 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		7F682B250FCDB73B1A988DA93643490F /* NSAttributedString+CCLFormat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CCLFormat-dummy.m"; sourceTree = "<group>"; };
+		7FF8AFDA9DB461516B1A98DA8269F574 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		843F045010B48E506F179B79ACDE6D43 /* NSAttributedString+CCLFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CCLFormat.h"; sourceTree = "<group>"; };
 		84F846D597095B69DA1679A5B929E789 /* Pods-SplatStagesToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatStagesToday.debug.xcconfig"; sourceTree = "<group>"; };
-		87E48548D329F439F6B888E3ADC62132 /* ValetDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ValetDefines.h; path = Other/ValetDefines.h; sourceTree = "<group>"; };
-		8A1828B53C2351E3503B10217044EF85 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
+		8A138362B2F0ECCC26C016159CD777EA /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		8BCDA780DD402FC6B382AC66D1F18B40 /* libPods-SplatStagesFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SplatStagesFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD458998DB660E730847A5E583AC03F /* Pods-SplatStagesToday-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SplatStagesToday-dummy.m"; sourceTree = "<group>"; };
+		8DC00491D5BFDA2FAA1C2CEEA9776B44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		96BFBDC575944BEDA1BBB817474EC688 /* Pods-SplatStages-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatStages-frameworks.sh"; sourceTree = "<group>"; };
-		9782B10655EBCAF5BA3C2B5D5FFEA9DF /* libNSAttributedString+CCLFormat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNSAttributedString+CCLFormat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D0885501970A23131F805DD46D9F15 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
 		99236AE3AF54B2B06D1187C68E0A5D17 /* Pods-SplatStagesFramework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatStagesFramework-resources.sh"; sourceTree = "<group>"; };
-		A7C37F84F86F6B1AB50D3EE459F534C8 /* VALSynchronizableValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSynchronizableValet.m; path = Valet/VALSynchronizableValet.m; sourceTree = "<group>"; };
-		A9DEB01160B5587C622B46F94175B131 /* NSAttributedString+CCLFormat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSAttributedString+CCLFormat.xcconfig"; sourceTree = "<group>"; };
+		9BEEC0E37C31008B679898F26EC7F576 /* VALValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALValet.m; path = Valet/VALValet.m; sourceTree = "<group>"; };
+		A082E8641075C266767E6137D7835BD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A2AF3983AF127FF4B6B8EBD1D5503E9D /* ActionSheetPicker-3.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.xcconfig"; sourceTree = "<group>"; };
 		A9F8B64D4B5B86B5CE07C85246EE3E99 /* Pods-SplatStages-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SplatStages-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B83044D18BFC99EFF73CF42B0B337B66 /* libPods-SplatStages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SplatStages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC86C57D5611982AC32EBCCD71C453D /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
+		ADF419C6BDF401F326514D20255983AD /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		AE066FF0937F8B8EBDBDD649CD52906C /* VALSecureEnclaveValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSecureEnclaveValet.m; path = Valet/VALSecureEnclaveValet.m; sourceTree = "<group>"; };
+		B366AF5587EDF50B23F9B541A79B8223 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
+		B4E28D0CA06C70C425ECF6AB2987DCA8 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		B81C0965A63ED9A99EE0A83F54AC5E1F /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetMultipleStringPicker.h; path = Pickers/ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BACE7B0020993EF1A1D97FC98662F2F6 /* Pods-SplatStagesToday-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SplatStagesToday-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB53FC1B45533D204A3B2E46D5491F1A /* VALSecureEnclaveValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALSecureEnclaveValet.m; path = Valet/VALSecureEnclaveValet.m; sourceTree = "<group>"; };
-		C5365BF20C0F57C2A8F921F4BA25DF2E /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
-		CA231107475E2F95D2AC73383395D42E /* NSAttributedString+CCLFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CCLFormat.h"; sourceTree = "<group>"; };
-		CCB4E0B04DFE9CF4A544CD72EB89ADA4 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
-		CF4CEC41FCF27A8AEB02E9E12C19005E /* VALValet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VALValet.m; path = Valet/VALValet.m; sourceTree = "<group>"; };
-		D34923D8DF0683677A9AB28F567F5634 /* NSAttributedString+CCLFormat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CCLFormat-dummy.m"; sourceTree = "<group>"; };
+		C17FF377D76F07A3F7AB5C6797708A81 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
+		C496435C75C7D0E8216D449BCECB485B /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
+		CEFEC17A1B692433737CF77383394C81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CFF85770DEAF10A744582DCF0CA56D06 /* NSAttributedString+CCLFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CCLFormat.m"; sourceTree = "<group>"; };
+		D10CFC9717535F5781761EC6C30A4C69 /* libPods-SplatStagesToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SplatStagesToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C9A03B3C56B31DF73410670FE0DB55 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63780A26844237F70E89ABA1921DBDB /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
 		D8FB6A977483C29F296BE6E24B9DF1A6 /* Pods-SplatStagesToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatStagesToday.release.xcconfig"; sourceTree = "<group>"; };
-		DADCAAE9984AB6D4B3541059CBAF58EC /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		DEC3B2C8E6E1F6A2D6CD0D3BE214958F /* Pods-SplatStagesFramework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatStagesFramework-frameworks.sh"; sourceTree = "<group>"; };
 		DF898219BF9988210B1EB5784E25DDD9 /* Pods-SplatStagesFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SplatStagesFramework.release.xcconfig"; sourceTree = "<group>"; };
+		DFD2C9290D8102AC16946D58AA6D4690 /* ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
 		E10E75D6DCBF588A5772033E28DF824E /* Pods-SplatStages-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SplatStages-acknowledgements.plist"; sourceTree = "<group>"; };
-		E453A0133EE698E7BF59D79D62239837 /* libPods-SplatStagesFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SplatStagesFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4F060ECBDB69EFEB1865DC463C89FE6 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		E62D748FC0E0E2282A6B15D8456F6E08 /* VALValet_Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALValet_Protected.h; path = Valet/VALValet_Protected.h; sourceTree = "<group>"; };
+		E9EF2B8222D7D6C3FCC9104C2FD66364 /* ActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Pickers/ActionSheetPicker.h; sourceTree = "<group>"; };
+		EA97F9196FB1E5C2CCAB8978B5F2FF52 /* libActionSheetPicker-3.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libActionSheetPicker-3.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB739BE0DE3B0A8ECC54C1059B4ABDD5 /* libNSAttributedString+CCLFormat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNSAttributedString+CCLFormat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED98B615D3287A8D6BA6478707C91940 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
 		EEA8D76996FE4F86A137084426CE10D7 /* Pods-SplatStagesFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SplatStagesFramework-dummy.m"; sourceTree = "<group>"; };
-		F3ECB0E1BA1EA69DFF84796CF70BA2A5 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
+		F1FD736B920A569D847DDA15C51FFDC6 /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetMultipleStringPicker.m; path = Pickers/ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
+		F40937A93463EB30A7EB2FB0699EE65A /* VALSecureEnclaveValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSecureEnclaveValet.h; path = Valet/VALSecureEnclaveValet.h; sourceTree = "<group>"; };
 		F7C0668F9386C92519091729839D2AEB /* Pods-SplatStagesToday-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatStagesToday-resources.sh"; sourceTree = "<group>"; };
-		FAB3AA83B54D4CD1526773C27E078635 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		FCBFD43E8C7097233DD4F7FEDAA47860 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FE59B5A915C59621B094CFA88848DECC /* Pods-SplatStagesToday-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SplatStagesToday-frameworks.sh"; sourceTree = "<group>"; };
-		FEA683B49EC8E03E6337502FEF82C93A /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,11 +212,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C643E79305409185714953B21DEEE63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E9F68257ABFEAA2ADF1D45CAB62096 /* Foundation.framework in Frameworks */,
+				E72743EE2EDF2CF30023BA52CF5F87C5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E051FBA04D578444E47C4570F0178356 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D4303360D8E0180C13B3A680C4866A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5EF37B6629A50945AB9A73177364ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD2250CF8705F2EC1C486798E1AB90D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,61 +246,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCA26538F8DDAF6D8AF2442230A23007 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87BEB0E9BC1DCDF9F809E10DE1DDD237 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03315C7AF10F1022FDBE2392638D3359 /* OneSignal */ = {
+		077D914A66CCDE17768860376BF58956 /* NSAttributedString+CCLFormat */ = {
 			isa = PBXGroup;
 			children = (
-				0F31058142BD2F860BD4186B2FB3CD1F /* Frameworks */,
+				843F045010B48E506F179B79ACDE6D43 /* NSAttributedString+CCLFormat.h */,
+				CFF85770DEAF10A744582DCF0CA56D06 /* NSAttributedString+CCLFormat.m */,
+				90E4C85278DE150E13911EE1F0A8DFA2 /* Support Files */,
 			);
-			path = OneSignal;
+			path = "NSAttributedString+CCLFormat";
 			sourceTree = "<group>";
 		};
-		0675ABDABB02A0082C4C36EA21431179 /* Support Files */ = {
+		0A1A608DDE1715727AC47719C304B6C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C5365BF20C0F57C2A8F921F4BA25DF2E /* Valet.xcconfig */,
-				CCB4E0B04DFE9CF4A544CD72EB89ADA4 /* Valet-dummy.m */,
-				8A1828B53C2351E3503B10217044EF85 /* Valet-prefix.pch */,
+				BA57002D889DF4585E42C13D9C7B23FD /* ActionSheetPicker-3.0 */,
+				FD09295C66E4F416787C231BD74659D6 /* MBProgressHUD */,
+				077D914A66CCDE17768860376BF58956 /* NSAttributedString+CCLFormat */,
+				EE71E855A18761E3FA31524A8F8AF4DC /* OneSignal */,
+				AE8A35D9066FD413D24D7BB5A8BA1BA5 /* Valet */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E7949EFE90AB14070586457B41D47E2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		180A834578129567A315AB5DC657C5D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309ECE2E75FCE87DC7E1A173B2AC1579 /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		240993EA1519D24ED7F07071B2D6008F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B366AF5587EDF50B23F9B541A79B8223 /* Valet.xcconfig */,
+				C17FF377D76F07A3F7AB5C6797708A81 /* Valet-dummy.m */,
+				3C65F5BF204B54CFC56DEBAC6792904C /* Valet-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Valet";
-			sourceTree = "<group>";
-		};
-		0F31058142BD2F860BD4186B2FB3CD1F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FEA683B49EC8E03E6337502FEF82C93A /* OneSignal.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C7D0C5845324929F38DBF3F26F5ED0B5 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2DFDFE9D4C712293AB1C5D234D02BBE4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F0779285F375636FE003F294A321424 /* MBProgressHUD.xcconfig */,
-				FAB3AA83B54D4CD1526773C27E078635 /* MBProgressHUD-dummy.m */,
-				DADCAAE9984AB6D4B3541059CBAF58EC /* MBProgressHUD-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
 		2E0CD366E29ADFACBC7B45B3336B58BD /* Targets Support Files */ = {
@@ -239,6 +306,17 @@
 				3F6FE54B63B7F6CF3193C1B41C0166CE /* Pods-SplatStagesToday */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3E7949EFE90AB14070586457B41D47E2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8DC00491D5BFDA2FAA1C2CEEA9776B44 /* CoreGraphics.framework */,
+				A082E8641075C266767E6137D7835BD2 /* Foundation.framework */,
+				00004D6E9BE4CB4A62F38A3044584389 /* Security.framework */,
+				CEFEC17A1B692433737CF77383394C81 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		3F6FE54B63B7F6CF3193C1B41C0166CE /* Pods-SplatStagesToday */ = {
@@ -256,97 +334,107 @@
 			path = "Target Support Files/Pods-SplatStagesToday";
 			sourceTree = "<group>";
 		};
-		42929E5F8A1399318B2799BBB4A6474C /* Valet */ = {
+		521903BD80839E4A8FA5368137C06C27 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3ECB0E1BA1EA69DFF84796CF70BA2A5 /* Valet.h */,
-				87E48548D329F439F6B888E3ADC62132 /* ValetDefines.h */,
-				7232AD7186464347E97BC379D6007C7E /* VALSecureEnclaveValet.h */,
-				BB53FC1B45533D204A3B2E46D5491F1A /* VALSecureEnclaveValet.m */,
-				16A2D208B6B79B2F3192A6F1C400F1B5 /* VALSynchronizableValet.h */,
-				A7C37F84F86F6B1AB50D3EE459F534C8 /* VALSynchronizableValet.m */,
-				3A7E5A4642C75A02A661FA866024B757 /* VALValet.h */,
-				CF4CEC41FCF27A8AEB02E9E12C19005E /* VALValet.m */,
-				E62D748FC0E0E2282A6B15D8456F6E08 /* VALValet_Protected.h */,
-				0675ABDABB02A0082C4C36EA21431179 /* Support Files */,
-			);
-			path = Valet;
-			sourceTree = "<group>";
-		};
-		5A89EA5B072B0C55BC19645CC4A901D7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				207C3778AAC896004A0CDFCDAAD3CADC /* libMBProgressHUD.a */,
-				9782B10655EBCAF5BA3C2B5D5FFEA9DF /* libNSAttributedString+CCLFormat.a */,
-				B83044D18BFC99EFF73CF42B0B337B66 /* libPods-SplatStages.a */,
-				E453A0133EE698E7BF59D79D62239837 /* libPods-SplatStagesFramework.a */,
-				033374089F2ACFEAE3708F098C1DEE94 /* libPods-SplatStagesToday.a */,
-				1AF198215F82C549A0506AB4E3235585 /* libValet.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		61626EC86C9B1A16398161E717F23583 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A9DEB01160B5587C622B46F94175B131 /* NSAttributedString+CCLFormat.xcconfig */,
-				D34923D8DF0683677A9AB28F567F5634 /* NSAttributedString+CCLFormat-dummy.m */,
-				02D7978F416E5373345F5D6ED18CC3F6 /* NSAttributedString+CCLFormat-prefix.pch */,
+				A2AF3983AF127FF4B6B8EBD1D5503E9D /* ActionSheetPicker-3.0.xcconfig */,
+				DFD2C9290D8102AC16946D58AA6D4690 /* ActionSheetPicker-3.0-dummy.m */,
+				3C0624F3157D3BAFA831D3FB68B21A3D /* ActionSheetPicker-3.0-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/NSAttributedString+CCLFormat";
+			path = "../Target Support Files/ActionSheetPicker-3.0";
 			sourceTree = "<group>";
 		};
-		61BC4E5FD693F87FC711C10C97D08272 /* NSAttributedString+CCLFormat */ = {
+		563FC161FD07607A55C28AA404999E3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA231107475E2F95D2AC73383395D42E /* NSAttributedString+CCLFormat.h */,
-				54E349DD11E458E8A3165D0CD6AD849A /* NSAttributedString+CCLFormat.m */,
-				61626EC86C9B1A16398161E717F23583 /* Support Files */,
+				EA97F9196FB1E5C2CCAB8978B5F2FF52 /* libActionSheetPicker-3.0.a */,
+				D3C9A03B3C56B31DF73410670FE0DB55 /* libMBProgressHUD.a */,
+				EB739BE0DE3B0A8ECC54C1059B4ABDD5 /* libNSAttributedString+CCLFormat.a */,
+				0B89A5AA03CC6A892C2D4A80E66BE55B /* libPods-SplatStages.a */,
+				8BCDA780DD402FC6B382AC66D1F18B40 /* libPods-SplatStagesFramework.a */,
+				D10CFC9717535F5781761EC6C30A4C69 /* libPods-SplatStagesToday.a */,
+				41C612337F819F56E447135FDB17B3F4 /* libValet.a */,
 			);
-			path = "NSAttributedString+CCLFormat";
-			sourceTree = "<group>";
-		};
-		69750AB6222F41D864CB892D7463E90A /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				E4F060ECBDB69EFEB1865DC463C89FE6 /* MBProgressHUD.h */,
-				FCBFD43E8C7097233DD4F7FEDAA47860 /* MBProgressHUD.m */,
-				2DFDFE9D4C712293AB1C5D234D02BBE4 /* Support Files */,
-			);
-			path = MBProgressHUD;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				CF2D464A26C889CA10A6EB55EDEE5A6F /* Pods */,
-				5A89EA5B072B0C55BC19645CC4A901D7 /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				0A1A608DDE1715727AC47719C304B6C8 /* Pods */,
+				563FC161FD07607A55C28AA404999E3E /* Products */,
 				2E0CD366E29ADFACBC7B45B3336B58BD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		C7D0C5845324929F38DBF3F26F5ED0B5 /* iOS */ = {
+		90E4C85278DE150E13911EE1F0A8DFA2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				404D69B17CE747E6C6FCCAF879AAD2DB /* CoreGraphics.framework */,
-				272FBCA24073E628B188F2C104830A4B /* Foundation.framework */,
-				8398B3D0EB66636F9DF19257E36C76C3 /* Security.framework */,
+				6ABBAF432FBDEF2E16B20BD01A62641F /* NSAttributedString+CCLFormat.xcconfig */,
+				7F682B250FCDB73B1A988DA93643490F /* NSAttributedString+CCLFormat-dummy.m */,
+				0D7E5E40FC29CFACE97D7850606BCF20 /* NSAttributedString+CCLFormat-prefix.pch */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/NSAttributedString+CCLFormat";
 			sourceTree = "<group>";
 		};
-		CF2D464A26C889CA10A6EB55EDEE5A6F /* Pods */ = {
+		AE8A35D9066FD413D24D7BB5A8BA1BA5 /* Valet */ = {
 			isa = PBXGroup;
 			children = (
-				69750AB6222F41D864CB892D7463E90A /* MBProgressHUD */,
-				61BC4E5FD693F87FC711C10C97D08272 /* NSAttributedString+CCLFormat */,
-				03315C7AF10F1022FDBE2392638D3359 /* OneSignal */,
-				42929E5F8A1399318B2799BBB4A6474C /* Valet */,
+				ADC86C57D5611982AC32EBCCD71C453D /* Valet.h */,
+				10244A55E1E5184538C910865268DCDB /* ValetDefines.h */,
+				F40937A93463EB30A7EB2FB0699EE65A /* VALSecureEnclaveValet.h */,
+				AE066FF0937F8B8EBDBDD649CD52906C /* VALSecureEnclaveValet.m */,
+				C496435C75C7D0E8216D449BCECB485B /* VALSynchronizableValet.h */,
+				66AF6A34DC21C8CF4518B86A621F0929 /* VALSynchronizableValet.m */,
+				239521D1CC3F04130869D40106816B47 /* VALValet.h */,
+				9BEEC0E37C31008B679898F26EC7F576 /* VALValet.m */,
+				6EC052AFCB5332BC7860E2411F662FD6 /* VALValet_Protected.h */,
+				240993EA1519D24ED7F07071B2D6008F /* Support Files */,
 			);
-			name = Pods;
+			path = Valet;
+			sourceTree = "<group>";
+		};
+		BA57002D889DF4585E42C13D9C7B23FD /* ActionSheetPicker-3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				96D0885501970A23131F805DD46D9F15 /* AbstractActionSheetPicker.h */,
+				6A843EE251F3496D8755BED35F5F4099 /* AbstractActionSheetPicker.m */,
+				2419BA4B4D34AB7422D39CA8E3B2E1EB /* ActionSheetCustomPicker.h */,
+				33413C33DFA7740363BCF31EB1C8C807 /* ActionSheetCustomPicker.m */,
+				1BE955FA7DADF1E3E52BAA899B7A8A0D /* ActionSheetCustomPickerDelegate.h */,
+				25AB47A310B9B46351ADAEF3F808D24A /* ActionSheetDatePicker.h */,
+				B4E28D0CA06C70C425ECF6AB2987DCA8 /* ActionSheetDatePicker.m */,
+				D63780A26844237F70E89ABA1921DBDB /* ActionSheetDistancePicker.h */,
+				748C19658148B8C7B0108C610FEE9F97 /* ActionSheetDistancePicker.m */,
+				ED98B615D3287A8D6BA6478707C91940 /* ActionSheetLocalePicker.h */,
+				5A6C1BAC31E5E8B01B69D4BA47595058 /* ActionSheetLocalePicker.m */,
+				B81C0965A63ED9A99EE0A83F54AC5E1F /* ActionSheetMultipleStringPicker.h */,
+				F1FD736B920A569D847DDA15C51FFDC6 /* ActionSheetMultipleStringPicker.m */,
+				E9EF2B8222D7D6C3FCC9104C2FD66364 /* ActionSheetPicker.h */,
+				6511DE28D12A413C4612604274E8DE80 /* ActionSheetStringPicker.h */,
+				7FF8AFDA9DB461516B1A98DA8269F574 /* ActionSheetStringPicker.m */,
+				4B278A0231344C75613017DA0344F2E1 /* DistancePickerView.h */,
+				1384040E4AB9AEE8D07158C94BA7C029 /* DistancePickerView.m */,
+				105179663DF9787EEE5FDA6623D91693 /* SWActionSheet.h */,
+				664C2EB45C4E0584E81738505A343FB2 /* SWActionSheet.m */,
+				521903BD80839E4A8FA5368137C06C27 /* Support Files */,
+			);
+			path = "ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		C23B63F75228E984230A5ABF152AFDD3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				225842FB72572577AB739A00F7EB9CEF /* MBProgressHUD.xcconfig */,
+				ADF419C6BDF401F326514D20255983AD /* MBProgressHUD-dummy.m */,
+				8A138362B2F0ECCC26C016159CD777EA /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
 		DD2FF48649EF7CC11516A65F5B0AE6FF /* Pods-SplatStagesFramework */ = {
@@ -379,6 +467,24 @@
 			path = "Target Support Files/Pods-SplatStages";
 			sourceTree = "<group>";
 		};
+		EE71E855A18761E3FA31524A8F8AF4DC /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				180A834578129567A315AB5DC657C5D3 /* Frameworks */,
+			);
+			path = OneSignal;
+			sourceTree = "<group>";
+		};
+		FD09295C66E4F416787C231BD74659D6 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5C88200ECBE0EE2D01D24C7AE3C3A407 /* MBProgressHUD.h */,
+				2091245C8B503BDC8A28B4F44940C3DC /* MBProgressHUD.m */,
+				C23B63F75228E984230A5ABF152AFDD3 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -392,6 +498,24 @@
 				EE45AF5D00386F726312C5AC1DA92997 /* VALSynchronizableValet.h in Headers */,
 				C025C4A57EF91B4442C0E6A9192D3101 /* VALValet.h in Headers */,
 				0046C1717D136F50194A90FA9AC29901 /* VALValet_Protected.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		964C3F8E7A03E7DF733488B19527C702 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07AD946CCB083CFBB4B53B3FDD11A34 /* AbstractActionSheetPicker.h in Headers */,
+				93BE1B21D2EF4C203B2737AFD25CB194 /* ActionSheetCustomPicker.h in Headers */,
+				5E30E814A1C1DDF0831C13EAA7B67D8D /* ActionSheetCustomPickerDelegate.h in Headers */,
+				C894D7FF063A3F5A240E263C56AD40E1 /* ActionSheetDatePicker.h in Headers */,
+				344F8694420AB4C9208DE58BC5BC2AD4 /* ActionSheetDistancePicker.h in Headers */,
+				212229C92E1AE53C1A6484BE879AA78D /* ActionSheetLocalePicker.h in Headers */,
+				D69FAEACB1EA5CBF8064A19FDE24AEA6 /* ActionSheetMultipleStringPicker.h in Headers */,
+				ECD909A0F04AF0626AAA010FF07D4CF3 /* ActionSheetPicker.h in Headers */,
+				F85C650DF29E36A3FC4F0BB0E5655EF6 /* ActionSheetStringPicker.h in Headers */,
+				2851FB5E08B2ED22B6A14C1B32BEF450 /* DistancePickerView.h in Headers */,
+				0FFB30535F6B4DD6A0E7DB8B367D3110 /* SWActionSheet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,24 +552,7 @@
 			);
 			name = "NSAttributedString+CCLFormat";
 			productName = "NSAttributedString+CCLFormat";
-			productReference = 9782B10655EBCAF5BA3C2B5D5FFEA9DF /* libNSAttributedString+CCLFormat.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		1860CF1393366AFCBDFE5B5CCC3F295E /* Pods-SplatStages */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2A0069B3C7799436148B5A90EAE2FAD /* Build configuration list for PBXNativeTarget "Pods-SplatStages" */;
-			buildPhases = (
-				DD4AD2386D08252A74F0B88EA685C167 /* Sources */,
-				FCA26538F8DDAF6D8AF2442230A23007 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42A6BAD9DB5132AFD79F4BA6B556C845 /* PBXTargetDependency */,
-			);
-			name = "Pods-SplatStages";
-			productName = "Pods-SplatStages";
-			productReference = B83044D18BFC99EFF73CF42B0B337B66 /* libPods-SplatStages.a */;
+			productReference = EB739BE0DE3B0A8ECC54C1059B4ABDD5 /* libNSAttributedString+CCLFormat.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		45898AA5679085D5AC94EB2A5F838A94 /* Pods-SplatStagesToday */ = {
@@ -463,7 +570,24 @@
 			);
 			name = "Pods-SplatStagesToday";
 			productName = "Pods-SplatStagesToday";
-			productReference = 033374089F2ACFEAE3708F098C1DEE94 /* libPods-SplatStagesToday.a */;
+			productReference = D10CFC9717535F5781761EC6C30A4C69 /* libPods-SplatStagesToday.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4C36B1F5D992ACDFD781AFC537E2D4B2 /* ActionSheetPicker-3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C499359747BF5D61B42FE4A8CDE3F3B /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */;
+			buildPhases = (
+				0702BD54DCCACA0F829FA184C2F3F533 /* Sources */,
+				C643E79305409185714953B21DEEE63B /* Frameworks */,
+				964C3F8E7A03E7DF733488B19527C702 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ActionSheetPicker-3.0";
+			productName = "ActionSheetPicker-3.0";
+			productReference = EA97F9196FB1E5C2CCAB8978B5F2FF52 /* libActionSheetPicker-3.0.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		55DE34E3AA2628F8E9BFB792048D1195 /* Valet */ = {
@@ -480,7 +604,25 @@
 			);
 			name = Valet;
 			productName = Valet;
-			productReference = 1AF198215F82C549A0506AB4E3235585 /* libValet.a */;
+			productReference = 41C612337F819F56E447135FDB17B3F4 /* libValet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6735C100709A78C577135283C175EB53 /* Pods-SplatStages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB532DFE490D0BD013FAD3BCCBF5CE5F /* Build configuration list for PBXNativeTarget "Pods-SplatStages" */;
+			buildPhases = (
+				91D0C2910785BD886CB00AD1F54C8AE0 /* Sources */,
+				E5EF37B6629A50945AB9A73177364ACF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F13573FCA6DAD2DBCCFEF94CA48FBD3 /* PBXTargetDependency */,
+				B14A68CC47E21C009547D231DB9233F2 /* PBXTargetDependency */,
+			);
+			name = "Pods-SplatStages";
+			productName = "Pods-SplatStages";
+			productReference = 0B89A5AA03CC6A892C2D4A80E66BE55B /* libPods-SplatStages.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D2709635CDAFA14F19347622E0B98852 /* Pods-SplatStagesFramework */ = {
@@ -498,7 +640,7 @@
 			);
 			name = "Pods-SplatStagesFramework";
 			productName = "Pods-SplatStagesFramework";
-			productReference = E453A0133EE698E7BF59D79D62239837 /* libPods-SplatStagesFramework.a */;
+			productReference = 8BCDA780DD402FC6B382AC66D1F18B40 /* libPods-SplatStagesFramework.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
@@ -515,7 +657,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 207C3778AAC896004A0CDFCDAAD3CADC /* libMBProgressHUD.a */;
+			productReference = D3C9A03B3C56B31DF73410670FE0DB55 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -535,13 +677,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5A89EA5B072B0C55BC19645CC4A901D7 /* Products */;
+			productRefGroup = 563FC161FD07607A55C28AA404999E3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				4C36B1F5D992ACDFD781AFC537E2D4B2 /* ActionSheetPicker-3.0 */,
 				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
 				0567FA252832207BC6A51CAE57368C06 /* NSAttributedString+CCLFormat */,
-				1860CF1393366AFCBDFE5B5CCC3F295E /* Pods-SplatStages */,
+				6735C100709A78C577135283C175EB53 /* Pods-SplatStages */,
 				D2709635CDAFA14F19347622E0B98852 /* Pods-SplatStagesFramework */,
 				45898AA5679085D5AC94EB2A5F838A94 /* Pods-SplatStagesToday */,
 				55DE34E3AA2628F8E9BFB792048D1195 /* Valet */,
@@ -550,6 +693,23 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0702BD54DCCACA0F829FA184C2F3F533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3508A8CABFFFD4328831305D47BA0E7 /* AbstractActionSheetPicker.m in Sources */,
+				6CD2ECE24EA979DE1B7102C2237BF5F2 /* ActionSheetCustomPicker.m in Sources */,
+				5783D43A53FF3790FD7691D1AFB9FC56 /* ActionSheetDatePicker.m in Sources */,
+				68A4E8C7CB6ABC2DA39DF0084C7CBF1F /* ActionSheetDistancePicker.m in Sources */,
+				B8C1CB3C3B1955EADCD7B4134832DBC8 /* ActionSheetLocalePicker.m in Sources */,
+				DFF07CF909C72E2CBF4940B14F0ED362 /* ActionSheetMultipleStringPicker.m in Sources */,
+				2389031267C7E4D6183CB3F33FFDFCED /* ActionSheetPicker-3.0-dummy.m in Sources */,
+				75E875601EF847C0AD04F3A80D765D90 /* ActionSheetStringPicker.m in Sources */,
+				63981AA3C78C0BE575F3C995E17BDE55 /* DistancePickerView.m in Sources */,
+				4D79CC1FC9F4755285A78973185072F5 /* SWActionSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		098439AB598DDF1AF51146A2E3E2E562 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,6 +736,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91D0C2910785BD886CB00AD1F54C8AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F1041E6A92D9CCA19E135349298084 /* Pods-SplatStages-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE48864D77BEBD2B23957E8925CAFFC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,14 +763,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4AD2386D08252A74F0B88EA685C167 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C8039118314399CEE07152A87DEA6FA /* Pods-SplatStages-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -618,11 +778,11 @@
 			target = 0567FA252832207BC6A51CAE57368C06 /* NSAttributedString+CCLFormat */;
 			targetProxy = C9E17108A3193E8BD989DE698D17375E /* PBXContainerItemProxy */;
 		};
-		42A6BAD9DB5132AFD79F4BA6B556C845 /* PBXTargetDependency */ = {
+		9F13573FCA6DAD2DBCCFEF94CA48FBD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
-			targetProxy = 1115A096F16E32F49CD309F2DFEC7A7A /* PBXContainerItemProxy */;
+			name = "ActionSheetPicker-3.0";
+			target = 4C36B1F5D992ACDFD781AFC537E2D4B2 /* ActionSheetPicker-3.0 */;
+			targetProxy = 26C3A853B1D919196E54E4313E323D30 /* PBXContainerItemProxy */;
 		};
 		AC00CB62B72C5E05831B60074AEE7E65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -636,29 +796,18 @@
 			target = 55DE34E3AA2628F8E9BFB792048D1195 /* Valet */;
 			targetProxy = A2980E7501C9D9AD6B34CA3F4CF80077 /* PBXContainerItemProxy */;
 		};
+		B14A68CC47E21C009547D231DB9233F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
+			targetProxy = D6E771FCA1C16B8D25CD2C45419DFD0B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00B76F7D7EF2A3490EDD3CE4B64620EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 178F89BD72279D8A2E3BACC89CA2B460 /* Pods-SplatStages.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		2EB7464BFC4B881299B5657C95CD0AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F0779285F375636FE003F294A321424 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 225842FB72572577AB739A00F7EB9CEF /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -676,7 +825,7 @@
 		};
 		32E595B66AAD5D8CDB35864C7BDF5470 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5365BF20C0F57C2A8F921F4BA25DF2E /* Valet.xcconfig */;
+			baseConfigurationReference = B366AF5587EDF50B23F9B541A79B8223 /* Valet.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -695,7 +844,7 @@
 		};
 		4339C668BFB954CA7085FA2E17C73C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5365BF20C0F57C2A8F921F4BA25DF2E /* Valet.xcconfig */;
+			baseConfigurationReference = B366AF5587EDF50B23F9B541A79B8223 /* Valet.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -711,6 +860,41 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		4910A01DBDB7375FAE32DD1A380752E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AF3983AF127FF4B6B8EBD1D5503E9D /* ActionSheetPicker-3.0.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		58AB6904F06826D1CBF18D5477C3FAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599713CBDC89A939BC1E9141DC397FE7 /* Pods-SplatStages.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		5B0EDC252A30904BAE9A207AA26AD71A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -730,14 +914,14 @@
 			};
 			name = Release;
 		};
-		6FA31C6171170B2497302C8398053EC5 /* Release */ = {
+		7577D00D31E84DDF4355F8D39673E342 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 599713CBDC89A939BC1E9141DC397FE7 /* Pods-SplatStages.release.xcconfig */;
+			baseConfigurationReference = 178F89BD72279D8A2E3BACC89CA2B460 /* Pods-SplatStages.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -745,11 +929,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		7773F2B7A7AF536A59C629E34456501E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9DEB01160B5587C622B46F94175B131 /* NSAttributedString+CCLFormat.xcconfig */;
+			baseConfigurationReference = 6ABBAF432FBDEF2E16B20BD01A62641F /* NSAttributedString+CCLFormat.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -768,7 +952,7 @@
 		};
 		919FAA2929EE9C5D42F4E864F99B6175 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F0779285F375636FE003F294A321424 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 225842FB72572577AB739A00F7EB9CEF /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -840,6 +1024,24 @@
 			};
 			name = Release;
 		};
+		C33C037830394F2DE1D7FBCFBC9FFC21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AF3983AF127FF4B6B8EBD1D5503E9D /* ActionSheetPicker-3.0.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		C51F124DC11D4E13A8ABC342A87012E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1EB4967E606D4CCEC4840A60E50F3929 /* Pods-SplatStagesFramework.debug.xcconfig */;
@@ -877,7 +1079,7 @@
 		};
 		F20F63B5FAD13F5C6C4AB0489DE66DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9DEB01160B5587C622B46F94175B131 /* NSAttributedString+CCLFormat.xcconfig */;
+			baseConfigurationReference = 6ABBAF432FBDEF2E16B20BD01A62641F /* NSAttributedString+CCLFormat.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -940,6 +1142,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2C499359747BF5D61B42FE4A8CDE3F3B /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C33C037830394F2DE1D7FBCFBC9FFC21 /* Debug */,
+				4910A01DBDB7375FAE32DD1A380752E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -958,20 +1169,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BB532DFE490D0BD013FAD3BCCBF5CE5F /* Build configuration list for PBXNativeTarget "Pods-SplatStages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7577D00D31E84DDF4355F8D39673E342 /* Debug */,
+				58AB6904F06826D1CBF18D5477C3FAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EB1AE40D3BD33D59970626007A2B4236 /* Build configuration list for PBXNativeTarget "Valet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4339C668BFB954CA7085FA2E17C73C5B /* Debug */,
 				32E595B66AAD5D8CDB35864C7BDF5470 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2A0069B3C7799436148B5A90EAE2FAD /* Build configuration list for PBXNativeTarget "Pods-SplatStages" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00B76F7D7EF2A3490EDD3CE4B64620EF /* Debug */,
-				6FA31C6171170B2497302C8398053EC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
