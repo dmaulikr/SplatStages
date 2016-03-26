@@ -68,6 +68,7 @@
 "ERROR_CHECKING_IF_LOGGED_IN" = "An error occurred while trying to check if you're logged into SplatNet.";
 "ERROR_FETCHING_COMPATIBLE_DATA" = "An error occurred while trying to fetch compatible stages and gamemodes for notifications.";
 "ERROR_SENDING_SUBSCRIPTION" = "An error occurred while trying to send a subscription to the notifications service.";
+"ERROR_SENDING_REGION" = "An error occurred while trying to send your selected region to the notifications service.";
 
 // Errors (Descriptions)
 "ERROR_KEYCHAIN_ACCESS_DESCRIPTION" = "Valet could not access the system keychain.";

@@ -6,8 +6,13 @@
 //  Copyright © 2015 OatmealDome. All rights reserved.
 //
 
-#import "SplatStagesFramework/SplatUtilities.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
+#import <OneSignal/OneSignal.h>
+
+#import <SplatStagesFramework/SplatUtilities.h>
+
+#import "AppDelegate.h"
 #import "RegionViewController.h"
 #import "TabViewController.h"
 
@@ -80,6 +85,10 @@
 - (void) tableView:(UITableView*) tableView didSelectRowAtIndexPath:(NSIndexPath*) indexPath {
     if ((long) indexPath.section == 1) {
         // User tapped on Save, so let's do just that!
+		
+		// Show our loading UI
+		[self showLoadingUIWithText:@"SAVING"];
+		
         NSString* chosenRegionInternal = [self.internalRegionStrings objectAtIndex:self.oldIndex.row];
         NSString* chosenRegionUser = [self.userFacingRegionStrings objectAtIndex:self.oldIndex.row];
         NSMutableString* finishText = [NSMutableString stringWithFormat:NSLocalizedString(@"SETTINGS_REGION_SET_TEXT", nil), chosenRegionUser];
@@ -88,27 +97,56 @@
         if (![chosenRegionInternal isEqualToString:@"na"]) {
             [finishText appendString:[NSString stringWithFormat:@"\n\n%@", NSLocalizedString(@"SETTINGS_REGION_SET_TEXT_OUTDATED", nil)]];
         }
-        
-        // Show the region set alert
-        UIAlertView* finishAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SETTINGS_REGION_SET_TITLE", nil) message:finishText delegate:self cancelButtonTitle:NSLocalizedString(@"CONFIRM", nil) otherButtonTitles:nil, nil];
-        [finishAlert show];
-        
-        // Update region label
-        [self.settingsRegionLabel setText:chosenRegionUser];
-        
-        // Save this setting.
-        NSUserDefaults* userDefaults = [SplatUtilities getUserDefaults];
-        [userDefaults setObject:@1 forKey:@"setupFinished"];
-        [userDefaults setObject:chosenRegionInternal forKey:@"region"];
-        [userDefaults setObject:chosenRegionUser forKey:@"regionUserFacing"];
-        [userDefaults synchronize];
-        
-        // Force a refresh of all the data.
-		TabViewController* rootController = (TabViewController*) self.tabBarController;
-        [rootController refreshAllData];
+		
+		// Send the user's region to the OneSignal subscription service
+		OneSignal* oneSignal = [(AppDelegate*) ([[UIApplication sharedApplication] delegate]) oneSignal];
+		[oneSignal sendTag:@"region" value:chosenRegionInternal onSuccess:^(NSDictionary* result) {
+			// Save this setting.
+			NSUserDefaults* userDefaults = [SplatUtilities getUserDefaults];
+			[userDefaults setObject:@1 forKey:@"setupFinished"];
+			[userDefaults setObject:chosenRegionInternal forKey:@"region"];
+			[userDefaults setObject:chosenRegionUser forKey:@"regionUserFacing"];
+			[userDefaults synchronize];
+			
+			dispatch_async(dispatch_get_main_queue(), ^{
+				// Update region label
+				[self.settingsRegionLabel setText:chosenRegionUser];
+				
+				// Reset the UI.
+				[self resetUI];
+				
+				// Show the region set alert
+				UIAlertView* finishAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SETTINGS_REGION_SET_TITLE", nil) message:finishText delegate:self cancelButtonTitle:NSLocalizedString(@"CONFIRM", nil) otherButtonTitles:nil, nil];
+				[finishAlert show];
+				
+				// Force a refresh of all the data.
+				TabViewController* rootController = (TabViewController*) self.tabBarController;
+				[rootController refreshAllData];
+			});
+		} onFailure:^(NSError* error) {
+			TabViewController* rootController = (TabViewController*) [self tabBarController];
+			[rootController errorOccurred:error when:@"ERROR_SENDING_REGION"];
+		}];
     }
-    
+	
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void) showLoadingUIWithText:(NSString*) text {
+	// Create a new MBProgressHUD attached to the view.
+	[MBProgressHUD hideAllHUDsForView:self.navigationController.view animated:true];
+	MBProgressHUD* loadingHud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+	loadingHud.mode = MBProgressHUDModeIndeterminate;
+	loadingHud.labelText = NSLocalizedString(text, nil);
+	
+	// Hide the back button.
+	[self.navigationItem setHidesBackButton:true animated:true];
+}
+
+- (void) resetUI {
+	// Undo temporary changes to the UI.
+	[MBProgressHUD hideAllHUDsForView:self.navigationController.view animated:true];
+	[self.navigationItem setHidesBackButton:false animated:true];
 }
 
 @end
