@@ -12,6 +12,8 @@
 #import "SettingsViewController.h"
 #import "TabViewController.h"
 
+#import "AppDelegate.h"
+
 @interface SettingsViewController ()
 
 @end
@@ -47,9 +49,11 @@
             }
             case 1: { // Report an Issue cell
 #ifdef DEBUG
-                NSUserDefaults* defaults = [SplatUtilities getUserDefaults];
-                [defaults setObject:@"debug" forKey:@"region"];
-                [defaults synchronize];
+				OneSignal* oneSignal = [(AppDelegate*) ([[UIApplication sharedApplication] delegate]) oneSignal];
+				[oneSignal sendTag:@"ERRORS" value:@"1"]; // StageSignal errors
+                //NSUserDefaults* defaults = [SplatUtilities getUserDefaults];
+                //[defaults setObject:@"debug" forKey:@"region"];
+                //[defaults synchronize];
 #else
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/OatmealDome/SplatStages/issues"]];
 #endif

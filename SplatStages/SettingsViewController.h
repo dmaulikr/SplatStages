@@ -7,7 +7,7 @@
 //
 
 #ifdef DEBUG
-#warning Debug build detected; the Report an Issue button will set the region to "debug".
+#warning Debug build detected; the Report an Issue button will behave as a debug button.
 #endif
 
 #import <UIKit/UIKit.h>
