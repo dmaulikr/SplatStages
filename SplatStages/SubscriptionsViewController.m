@@ -49,6 +49,10 @@
 	[[self getOneSignal] getTags:^(NSDictionary* tags) {
 		self.subscriptions = [[NSMutableArray alloc] init];
 		for (NSString* tag in [tags allKeys]) {
+			if ([tag isEqualToString:@"region"]) {
+				// Don't show the region tag
+				continue;
+			}
 			[self.subscriptions addObject:[[SSFSubscription alloc] initFromTag:tag]];
 		}
 		dispatch_async(dispatch_get_main_queue(), ^{
