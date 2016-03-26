@@ -79,9 +79,7 @@
 		NSString* stage = (self.selectedStage > [self.stages count]) ? nil : [self.stages objectAtIndex:self.selectedStage];
 		SSFSubscription* subscription = [[SSFSubscription alloc] initWithType:self.typeControl.selectedSegmentIndex rotationNumber:self.rotationControl.selectedSegmentIndex map:stage gamemode:gamemode];
 		
-		// Send the subscription to OneSignal.
-		OneSignal* oneSignal = [(AppDelegate*) ([[UIApplication sharedApplication] delegate]) oneSignal];
-		[oneSignal sendTag:[subscription toTag] value:@"1" onSuccess:^(NSDictionary* result) {
+		void (^tagSuccess)() = ^{
 			dispatch_async(dispatch_get_main_queue(), ^{
 				// Show a settings saved alert
 				UIAlertView* finishAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SETTINGS_SAVED_TITLE", nil) message:NSLocalizedString(@"SETTINGS_SAVED_TEXT", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"CONFIRM", nil) otherButtonTitles:nil, nil];
@@ -93,11 +91,24 @@
 				// Pop the view controller.
 				[self.navigationController popViewControllerAnimated:true];
 			});
-		} onFailure:^(NSError* error) {
+		};
+		
+		void (^tagFailure)(NSError* error) = ^(NSError* error) {
 			dispatch_async(dispatch_get_main_queue(), ^{
 				[self errorOccurred:error when:@"ERROR_SENDING_SUBSCRIPTION"];
 			});
-		}];
+		};
+		
+		// Send the subscription to OneSignal.
+		OneSignal* oneSignal = [(AppDelegate*) ([[UIApplication sharedApplication] delegate]) oneSignal];
+		[oneSignal sendTag:[subscription toTag] value:@"1" onSuccess:^(NSDictionary* result) {
+			if (subscription.subscriptionType == SPLATFEST) {
+				// Send a tag containing the user's region
+				[oneSignal sendTag:@"region" value:[SplatUtilities getUserRegion] onSuccess:tagSuccess onFailure:tagFailure];
+			} else {
+				tagSuccess();
+			}
+		} onFailure:tagFailure];
 	} else if (self.typeControl.selectedSegmentIndex != 2) {
 		if (indexPath.row == 2) { // Gamemode
 			NSMutableArray* localizedArray = [[NSMutableArray alloc] init];
