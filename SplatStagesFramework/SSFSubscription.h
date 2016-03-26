@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSUInteger, SubscriptionType) {
 	STAGE,
 	GAMEMODE,
-	SPLATFEST
+	SPLATFEST,
+	UNKNOWN
 };
 
 typedef NS_ENUM(NSUInteger, RotationNumber) {

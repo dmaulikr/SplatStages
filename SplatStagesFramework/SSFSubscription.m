@@ -44,6 +44,10 @@
 			case SPLATFEST: {
 				break;
 			}
+			case UNKNOWN: {
+				self.localizableMap = tag;
+				break;
+			}
 		}
 	}
 	
@@ -61,6 +65,9 @@
 		case SPLATFEST: {
 			return [NSString stringWithFormat:@"F"];
 		}
+		case UNKNOWN: {
+			return self.localizableMap;
+		}
 	}
 }
 
@@ -75,6 +82,9 @@
 		case SPLATFEST: {
 			return [NSString stringWithFormat:[SplatUtilities localizeString:@"SETTINGS_SPLATFEST_SUBSCRIPTION"], [[SplatUtilities getUserDefaults] objectForKey:@"regionUserFacing"]];
 		}
+		case UNKNOWN: {
+			return self.localizableMap;
+		}
 	}
 }
 
@@ -88,7 +98,7 @@
 	}
 	
 	// This should never happen.
-	return STAGE;
+	return UNKNOWN;
 }
 
 - (NSString*) stringFromRotationNumber:(RotationNumber) rotationNumber {
